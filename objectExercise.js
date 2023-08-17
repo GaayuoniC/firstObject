@@ -6,10 +6,10 @@ console.log(`numberA: ${numberA} numberB ${numberB} `);
 numberB = 45;
 console.log(`numberA: ${numberA} numberB ${numberB} `);*/
 
-/*
+
 - NumberA and NumberB are the same
 -let NumberB allocates the value in NumberA
--NumberB = 45 is replacing the value 30*/
+-NumberB = 45 is replacing the value 30
 
 /*const john = { name: "john", age: 30, job: "developer" };
 
@@ -26,13 +26,13 @@ console.log(jane);*/
 -"jane.name = jane" inserts the name as a property
 -John has three properties
 -Property name for developer is "job"
-
-
-
 */
+
+
+
 const golf = {
   color: "red",
-  maxSpeed: "18o",
+  maxSpeed: "180",
 };
 const opel = {
   color: "blue",
@@ -40,6 +40,10 @@ const opel = {
 };
 console.log("Golf: " + golf["color"]);
 console.log("Opel : " + opel.color);
+
+let golfColor = golf.color;
+golf.color = opel.color;
+opel.color = golf.color
 
 golf.color = "blue";
 opel.color = "red";
