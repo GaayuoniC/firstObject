@@ -5,11 +5,11 @@ console.log(`numberA: ${numberA} numberB ${numberB} `);
 
 numberB = 45;
 console.log(`numberA: ${numberA} numberB ${numberB} `);*/
-
+/*
 
 - NumberA and NumberB are the same
 -let NumberB allocates the value in NumberA
--NumberB = 45 is replacing the value 30
+-NumberB = 45 is replacing the value 30*/
 
 /*const john = { name: "john", age: 30, job: "developer" };
 
@@ -28,25 +28,21 @@ console.log(jane);*/
 -Property name for developer is "job"
 */
 
-
-
 const golf = {
-  color: "red",
+  color: "yellow",
   maxSpeed: "180",
 };
 const opel = {
-  color: "blue",
+  color: "green",
   maxSpeed: "185",
 };
-console.log("Golf: " + golf["color"]);
-console.log("Opel : " + opel.color);
+/*console.log("Golf: " + golf["color"]);
+console.log("Opel : " + opel.color);*/
 
 let golfColor = golf.color;
-golf.color = opel.color;
-opel.color = golf.color
+let opelColor = opel.color;
+golfColor = opel.color;
+opelColor = golf.color;
 
-golf.color = "blue";
-opel.color = "red";
-
-console.log("Golf color is : " + golf.color);
-console.log("Opel color is " + opel.color);
+console.log("Golf color is : " + golfColor);
+console.log("Opel color is " + opelColor);
